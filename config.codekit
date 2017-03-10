@@ -101,7 +101,7 @@
 		"outputAbbreviatedPath": "\/assets\/images\/enbiga-logo-azul.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/images\/enbiga-logo-white.png": {
 		"fileType": 32768,
@@ -112,7 +112,7 @@
 		"outputAbbreviatedPath": "\/assets\/images\/enbiga-logo-white.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/images\/favicon.png": {
 		"fileType": 32768,
@@ -123,7 +123,7 @@
 		"outputAbbreviatedPath": "\/assets\/images\/favicon.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/js\/script-ck.js": {
 		"fileType": 64,
@@ -1233,7 +1233,7 @@
 		"outputAbbreviatedPath": "\/screenshot.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/search.php": {
 		"fileType": 8192,
