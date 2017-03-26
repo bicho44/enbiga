@@ -46,6 +46,19 @@ function turismointer_setup() {
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary', 'imgd' ),
 	) );
+	$menuname = 'primary';
+	$bpmenulocation = 'Primary';
+	// Does the menu exist already?
+	$menu_exists = wp_get_nav_menu_object( $menuname );
+	if( !$menu_exists){
+		$menu_id = wp_create_nav_menu($menuname);
+		// Set up default BuddyPress links and add them to the menu.
+		wp_update_nav_menu_item($menu_id, 0, array(
+			'menu-item-title' =>  __('Home'),
+			'menu-item-classes' => 'home',
+			'menu-item-url' => home_url( '/' ), 
+			'menu-item-status' => 'publish'));
+	}
 
 	/*
 	 * Switch default core markup for search form, comment form, and comments
