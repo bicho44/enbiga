@@ -21,7 +21,7 @@ $destacados = $opciones_imgd['imgd_destaca'][0];
 $destacadoscant = $opciones_imgd['imgd_desta_cant'][0];
 
 $destanews = $opciones_imgd['imgd_desta_news'][0];
-$destanewscant = $opciones_imgd['imgd_desta_news_cant'][0];
+//$destanewscant = $opciones_imgd['imgd_desta_news_cant'][0];
 
 $columnas = $opciones_imgd['imgd_columnas'][0];
 
