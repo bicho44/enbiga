@@ -462,6 +462,7 @@ add_filter('upload_mimes', 'cc_mime_types');
  * @link: https://developer.wordpress.org/reference/functions/get_the_terms/
  */
 function wpdocs_custom_taxonomies_terms_links() {
+    global $post;
     // Get post by post ID.
     $post = get_post( $post->ID );
 
