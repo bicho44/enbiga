@@ -7,7 +7,7 @@ Flow: Opciones Vision
 
 */
 
-piklist(
+/*piklist(
     'field', 
     array(
         'type' => 'select'
@@ -22,7 +22,7 @@ piklist(
     )
 );
 
-
+*/
 piklist (
     'field',
     array(
