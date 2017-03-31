@@ -28,7 +28,8 @@ if (has_post_thumbnail()) {?>
     //get_the_terms(get_the_ID());
     the_title(sprintf('<h3><a href="%s" rel="bookmark">', esc_url(get_permalink())), '</a></h3>');
     
-    echo get_post_meta('imgg_chef_cargo', true );
+    $cargo = get_post_meta('imgg_chef_cargo', true );
+    echo var_dump($cargo);
     ?>
     
     <h4>Actualmente:</h4>
