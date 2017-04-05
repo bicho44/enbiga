@@ -25,6 +25,7 @@ function load_external_jQuery() {
 }
 
 
+
 /**
  * Enqueue scripts and styles.
  */
@@ -41,6 +42,8 @@ function imgdigital_scripts() {
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
         wp_enqueue_script( 'comment-reply' );
     }
+
+    wp_enqueue_style( 'imgd-google-fonts', '//fonts.googleapis.com/css?family=Dosis:400,600|Raleway', false ); 
 
 	wp_enqueue_style( 'imgdigital-style', get_template_directory_uri()."/assets/css/style.css");
 
