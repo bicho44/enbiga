@@ -34,16 +34,19 @@ animation:         KEYFRAME-NAME 5s infinite;
 #carrousel-bootstrap {
     margin-bottom: (@line-height-computed / 2);
 }
+
 .carousel{
     color: white;
     h1,h2,h3,h4 {color:white;}
 }
-.carousel-caption{
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 50%);
+// Scale up controls for tablets and up
+@media screen and (min-width: @screen-sm-min) {
+    .carousel-caption{
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 50%);
+    }
 }
-
 // --------- Noticias Destacadas
 .newsfeature {
 
