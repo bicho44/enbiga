@@ -25,14 +25,16 @@ else :
 endif;
 
 ?>
+<!--
 <?php	if ( 'post' === get_post_type() ) : ?>
 	<div class="entry-meta">
 		<?php turismointer_posted_on();
 ?>
-	</div><!-- .entry-meta -->
+	</div><!-- .entry-meta 
 	<?php
 	endif;
 ?>
+-->
 	</header><!-- .entry-header -->
 	<div class="entry-content">
 		<?php
