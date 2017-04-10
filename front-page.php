@@ -76,14 +76,14 @@ $slider_size = $opciones_imgd['imgd_slider_size'];
 	<?php include( locate_template( 'template-parts/content-front/destacados.php' ) ); ?>
 <?php } ?>
 
- <?php
+<?php if ($columnas!=0){?>
+	<?php include( locate_template( 'template-parts/content-front/columnas.php' ) ); ?>
+<?php } ?>
+
+<?php
  while ( have_posts() ) : the_post();
  	the_content();
  endwhile; // End of the loop.
  ?>
-
-<?php if ($columnas!=0){?>
-	<?php include( locate_template( 'template-parts/content-front/columnas.php' ) ); ?>
-<?php } ?>
 
 <?php get_footer(); ?>
