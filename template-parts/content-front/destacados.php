@@ -20,7 +20,7 @@ if ($loop->have_posts()) {?>
 
 
   <div class="container">
-       <!--<h2> Noticias Destacadas</h2>-->
+       <h2> <?php _e('Eventos Destacados', 'imgd'); ?></h2>
     <div class="row">
     <?php
     $x = 0;
