@@ -10265,6 +10265,7 @@ fieldset[disabled] a.more-link {
   padding: 0;
 }
 .tres-columnas {
+  padding-top: 6px;
   background-color: #eeeeee;
 }
 .ultimas {

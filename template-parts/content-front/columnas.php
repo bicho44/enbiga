@@ -22,6 +22,7 @@ $args = array(
 $loop = new WP_Query($args);
 ?>
 <section class="tres-columnas">
+  
   <div class="container">
     <div class="row">
 
