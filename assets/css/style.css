@@ -10273,11 +10273,7 @@ fieldset[disabled] a.more-link {
     }
     p {
         margin-bottom: 5px;
-    }
-    .entry-content {
-        margin-top: .5em;
-    }
-    */
+    }*/
 }
 .ultimas:last-child {
   border-bottom: none;
@@ -10301,6 +10297,9 @@ fieldset[disabled] a.more-link {
 .ultimas img {
   float: left;
   margin-right: 10px;
+}
+.ultimas .entry-content {
+  margin-bottom: .25em;
 }
 .entry-header .entry-meta {
   text-align: right;
