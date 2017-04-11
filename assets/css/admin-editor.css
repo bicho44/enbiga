@@ -1400,7 +1400,7 @@ fieldset[disabled] a.more-link {
   border-radius: 0;
   padding: 0;
 }
-.elementor img .img-circle {
+.elementor img.img-circle {
   border-radius: 50%;
 }
 .tres-columnas {
