@@ -33,4 +33,4 @@
       </header><!-- .entry-header -->
 
     </div><!-- Thumbnail -->
-  </div><!-- Col -->
+</div><!-- Col -->
