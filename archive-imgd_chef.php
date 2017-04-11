@@ -1,6 +1,6 @@
 <?php
 /**
- * The template para mostrar los Chef
+ * The template para mostrar los Chefs
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
