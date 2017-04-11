@@ -1400,6 +1400,9 @@ fieldset[disabled] a.more-link {
   border-radius: 0;
   padding: 0;
 }
+.elementor img .img-circle {
+  border-radius: 50%;
+}
 .tres-columnas {
   padding-top: 16px;
   background-color: #eeeeee;
