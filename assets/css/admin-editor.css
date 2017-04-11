@@ -1430,7 +1430,7 @@ fieldset[disabled] a.more-link {
   margin-right: 10px;
 }
 .ultimas .entry-content {
-  margin-bottom: .25em;
+  padding-bottom: .5em;
 }
 .entry-header .entry-meta {
   text-align: right;
