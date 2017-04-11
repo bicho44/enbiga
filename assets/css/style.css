@@ -10043,6 +10043,16 @@ animation:         KEYFRAME-NAME 5s infinite;
 .imgd-destacados {
   background-color: #ef7e5f;
   padding: 16px 0;
+  color: white;
+}
+.imgd-destacados a {
+  color: white;
+}
+.imgd-destacados h1,
+.imgd-destacados h2,
+.imgd-destacados h3,
+.imgd-destacados h4 {
+  color: white;
 }
 #carrousel-bootstrap {
   margin-bottom: 10px;
