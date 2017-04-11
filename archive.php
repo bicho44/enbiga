@@ -29,10 +29,12 @@ get_header(); ?>
 						* If you want to override this in a child theme, then include a file
 						* called content-___.php (where ___ is the Post Format name) and that will be used instead.
 						*/
-					get_template_part( 'template-parts/content', get_post_format() );
+					get_template_part( 'template-parts/content/archive', 'gral');
 
 				endwhile;
-
+?>
+<hr>
+<?php
 				if (function_exists("wp_bs_pagination")) {
 						//wp_bs_pagination($the_query->max_num_pages);
 					wp_bs_pagination();
@@ -46,7 +48,7 @@ get_header(); ?>
 		<?php
 		get_sidebar();
 		?>
-	</div>
+	</div><!-- row -->
 </div><!-- #primary -->
 
 <?php
