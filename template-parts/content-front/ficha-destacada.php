@@ -31,12 +31,12 @@ if ($notitle !== '0' ) { ?>
         ?>
         <h3 class="align-center">
           <a href="<?php the_permalink(); ?>" rel="bookmark">
-           <?php shortentext(get_the_title(), 40);?>
+           <?php shortentext(get_the_title(), 45);?>
          </a>
        </h3>
         <?php
         //the_title(sprintf('<h3 class="align-center"><a href="%s" rel="bookmark">', esc_url(get_permalink())), '</a></h3>');
-        shortentext(get_the_content(), 70);
+        shortentext(get_the_content(), 75);
         ?>
     </header><!-- .entry-header -->
 <?php } ?>
