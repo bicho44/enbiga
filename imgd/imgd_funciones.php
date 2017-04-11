@@ -48,7 +48,7 @@ function imgdigital_scripts() {
 	wp_enqueue_style( 'imgdigital-style', get_template_directory_uri()."/assets/css/style.css");
 
 }
-add_action( 'wp_enqueue_scripts', 'imgdigital_scripts', 20 );
+add_action( 'wp_enqueue_scripts', 'imgdigital_scripts', 2 );
 
 
 /** Definir el largo de los excerpt */
