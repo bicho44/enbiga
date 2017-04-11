@@ -1357,9 +1357,6 @@ fieldset[disabled] a.more-link {
 .modal h4 {
   color: #fff;
 }
-.widget-area {
-  padding-top: 30px;
-}
 .widget-title {
   font-size: 18px;
 }
@@ -1404,7 +1401,7 @@ fieldset[disabled] a.more-link {
   padding: 0;
 }
 .tres-columnas {
-  padding-top: 6px;
+  padding-top: 16px;
   background-color: #eeeeee;
 }
 .ultimas {
