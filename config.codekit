@@ -110,6 +110,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/assets\/images\/enbiga-con-plato-totop.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 10177,
+		"inputAbbreviatedPath": "\/assets\/images\/enbiga-con-plato-totop.png",
+		"outputAbbreviatedPath": "\/assets\/images\/enbiga-con-plato-totop.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/enbiga-logo-azul.png": {
 		"fileType": 32768,
 		"ignore": 0,

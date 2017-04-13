@@ -62,7 +62,7 @@ define('POST_EXCERPT_LENGTH', 55);
 */
 add_action( 'wp_footer', 'back_to_top' );
 function back_to_top() {
-    echo '<a id="totop" href="#" class="btn btn-default btn-xs"><i class="icon-chevron-up"></i> '.__("Subir","imgd").'</a>';
+    echo '<a id="totop" href="#" class="btn btn-default btn-xs"><img src="'.get_stylesheet_directory_uri().'/assets/images/enbiga-con-plato-totop.png"></a>';
 }
 
 /**
