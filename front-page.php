@@ -8,6 +8,7 @@
 */
 
 get_header(); 
+
 $opciones_imgd = get_option('opciones_imgd');
 
 $slider = $opciones_imgd['imgd_slider'][0];
