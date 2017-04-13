@@ -1476,17 +1476,14 @@ fieldset[disabled] a.more-link {
 }
 #totop {
   color: rgba(255, 255, 255, 0.4);
-  background-color: rgba(0, 1, 2, 0.2);
   position: fixed;
   display: none;
   outline: none;
   right: 15px;
   bottom: 15px;
-  border-color: rgba(0, 1, 2, 0.2);
 }
 #totop:hover {
   color: #fff;
-  background-color: rgba(0, 15, 27, 0.7);
 }
 @media (min-width: 992px) {
   #totop {
