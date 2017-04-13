@@ -1480,13 +1480,15 @@ fieldset[disabled] a.more-link {
   outline: none;
   right: 15px;
   bottom: 35px;
+  max-width: 50%;
+  z-index: 1000;
 }
 #totop:hover {
   color: #fff;
-  background-color: rgba(0, 15, 27, 0.7);
 }
 @media (min-width: 992px) {
   #totop {
+    max-width: 100%;
     right: 40px;
     bottom: 40px;
   }

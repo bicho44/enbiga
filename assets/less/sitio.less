@@ -249,12 +249,15 @@ animation:         KEYFRAME-NAME 5s infinite;
     outline: none;
     right: 15px;
     bottom: 35px;
+    max-width:50%;
     //border-color: fade(darken(@brand-primary, 30), 20%);
+    z-index: 1000;
     &:hover {
         color: @white;
-        background-color: fade(darken(@brand-primary, 25), 70%);
+        //background-color: fade(darken(@brand-primary, 25), 70%);
     }
     @media (min-width: @screen-md-min) {
+        max-width:100%;
         right: 40px;
         bottom: 40px;
     }
