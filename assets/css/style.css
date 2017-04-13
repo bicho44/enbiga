@@ -10344,15 +10344,15 @@ fieldset[disabled] a.more-link {
   color: #eeeeee;
 }
 #totop {
-  color: rgba(255, 255, 255, 0.4);
   position: fixed;
   display: none;
   outline: none;
   right: 15px;
-  bottom: 15px;
+  bottom: 35px;
 }
 #totop:hover {
   color: #fff;
+  background-color: rgba(0, 15, 27, 0.7);
 }
 @media (min-width: 992px) {
   #totop {

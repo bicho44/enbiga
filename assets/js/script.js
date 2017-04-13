@@ -25,7 +25,7 @@
 
 (function(){
   $(window).scroll(function () {
-      if ( $(this).scrollTop() > 400 )
+      if ( $(this).scrollTop() > 300 )
           $("#totop").fadeIn();
       else
           $("#totop").fadeOut();
