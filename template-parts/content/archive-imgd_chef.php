@@ -27,8 +27,10 @@
       ?>
       <header class="destacados-caption caption">
         <?php
-        //get_the_terms(get_the_ID());
+        
         the_title(sprintf('<h3><a href="%s" rel="bookmark">', esc_url(get_permalink())), '</a></h3>');
+        
+        get_the_terms(get_the_ID());
         ?>
       </header><!-- .entry-header -->
 

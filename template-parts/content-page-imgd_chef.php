@@ -4,10 +4,9 @@
 *
 * @link https://codex.wordpress.org/Template_Hierarchy
 *
-* @package Turismo_InterOceánico
+* @package ENBIGA
 */
 
-$videolink = '';
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -15,31 +14,13 @@ $videolink = '';
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
-	<?php
-	$videolink = get_post_meta(get_the_ID(),'imgd_programa_video', true);
-	//echo '<strong>Video Link:</strong> '. $videolink.'<br>';
-
-	if($videolink !=''){
-		global $wp_embed;
-		?>
-		<div class="video-programa">
-		<?php
-		echo $wp_embed->run_shortcode( '[embed]' . $videolink . '[/embed]' );
-		//echo do_shortcode("[youtube $videolink]");
-		?>
-		</div>
-		<?php
-	}
-	?>
+	
 
 	<div class="entry-content">
 		<?php
 		the_content();
 
 		echo wpdocs_custom_taxonomies_terms_links();
-
-		echo get_datos_video(get_the_ID());
-
 
 		// if ( class_exists( 'Jetpack_RelatedPosts' ) ) {
 		//      echo do_shortcode( '[jetpack-related-posts]' );
