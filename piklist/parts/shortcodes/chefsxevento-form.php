@@ -2,7 +2,7 @@
 /*
 Name: Chefs por Evento
 Description: Obtener los chefs que participan de un evento específico
-Shortcode: pullquote
+Shortcode: chefsxevento
 Icon: dashicons-editor-quote
 */
 
