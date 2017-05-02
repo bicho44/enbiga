@@ -118,6 +118,7 @@ require get_template_directory() . '/imgd/imgd_settings.php';
 //require get_template_directory() . '/inc/imgd/imgd_onepage_settings.php'; // Estas opciones estaban pensadas para el theme de onepagescroll
 
 require get_template_directory() . '/imgd/imgd_shortcode.php';
+require get_template_directory() . '/imgd/imgd_jetpack_mods.php';
 
 /* Google Fonts */
 function wpb_add_google_fonts() {
