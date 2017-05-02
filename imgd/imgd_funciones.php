@@ -464,7 +464,7 @@ add_filter('upload_mimes', 'cc_mime_types');
  * @see get_object_taxonomies()
  * @link: https://developer.wordpress.org/reference/functions/get_the_terms/
  */
-function wpdocs_custom_taxonomies_terms_links() {
+function wpdocs_custom_taxonomies_terms_links($classul="unstyled") {
     global $post;
     // Get post by post ID.
     $post = get_post( $post->ID );
@@ -483,7 +483,7 @@ function wpdocs_custom_taxonomies_terms_links() {
         $terms = get_the_terms( $post->ID, $taxonomy_slug );
 
         if ( ! empty( $terms ) ) {
-            $out[] = "<h2>" . $taxonomy->label . "</h2>\n<ul>";
+            $out[] = "<h2>" . $taxonomy->label . "</h2>\n<ul class='".$classul."'>";
             foreach ( $terms as $term ) {
                 $out[] = sprintf( '<li><a href="%1$s">%2$s</a></li>',
                     esc_url( get_term_link( $term->slug, $taxonomy_slug ) ),
