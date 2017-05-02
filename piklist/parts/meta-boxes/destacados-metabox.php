@@ -48,23 +48,3 @@ piklist (
         'position' => 'wrap'
     )
 );
-
-piklist (
-    'field',
-    array(
-        'type' => 'radio',
-        'scope' => 'post_meta',
-        'field' => 'imgd_home_news',
-        'label' => __('Destacar News', 'imgd'),
-        'description'=>__('Colocar este item en la Home Page en la Seccion de noticias','imgd'),
-        'value' => 0,
-        'attributes' => array(
-            'class' => 'radio'
-        ),
-        'choices' => array(
-            0 => __('No Destacar', 'imgd'),
-            1 => __('Destacar', 'imgd')
-        ),
-        'position' => 'wrap'
-    )
-);
