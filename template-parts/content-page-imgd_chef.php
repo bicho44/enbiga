@@ -14,17 +14,21 @@
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
-	
-
+	<?php
+			if (has_post_thumbnail()){
+				the_post_thumbnail('show-cropped');
+			}
+	?>
 	<div class="entry-content">
 		<?php
 		the_content();
 
 		echo wpdocs_custom_taxonomies_terms_links();
 
-		// if ( class_exists( 'Jetpack_RelatedPosts' ) ) {
-		//      echo do_shortcode( '[jetpack-related-posts]' );
-		//  }
+		 if ( class_exists( 'Jetpack_RelatedPosts' ) ) {
+		      echo do_shortcode( '[jetpack-related-posts]' );
+		}
+		
 
 		wp_link_pages( array(
 			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'turismointer' ),
