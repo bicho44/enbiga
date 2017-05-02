@@ -1,9 +1,10 @@
 <?php
 /*
-Name: Chefs por Evento
-Description: Obtener los chefs que participan de un evento específico
-Shortcode: chefsxevento
-Icon: dashicons-editor-quote
+name: Chefs por Evento
+description: Obtener los chefs que participan de un evento específico
+shortcode: chefsxevento
+icon: dashicons-id-alt
+preview: true
 */
 
   piklist('field', array(
