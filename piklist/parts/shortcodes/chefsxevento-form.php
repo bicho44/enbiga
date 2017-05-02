@@ -7,23 +7,25 @@ icon: dashicons-id-alt
 preview: true
 */
 
-$choices = piklist(
-      get_terms('imgd_servicio_categoria', array(
-        'hide_empty' => false
-      ))
-      ,array(
-        'term_id'
-        ,'name'
-      ));
-$choices[-1] = 'All Eventos';
-ksort($choices);
-
 piklist('field', array(
-    'type' => 'select'
-    ,'field' => 'imgd_servicio_categoria'
-    ,'label' => 'Evento'
-    ,'choices' => $choices
-  ));
+  'type' => 'select'
+  ,'scope' => 'taxonomy'
+  ,'field' => 'imgd_chef_evento'
+  ,'label' => __('Evento','imgd')
+  ,'description' => __('Selecciones el evento en el que participa','imgd')
+  ,'choices' => array(
+      '' => 'Seleccione un Evento'
+    )
+    + piklist(get_terms(array(
+      'taxonomy' => 'imgd_servicio_categoria'
+      ,'hide_empty' => false
+    ))
+    ,array(
+      'term_id'
+      ,'name'
+    )
+  )
+));
 
 piklist('field', array(
   'type' => 'text'

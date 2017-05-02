@@ -8,7 +8,7 @@ shortcode: chefsxevento
 	// Define the query
 	$args = array(
 		'post_type' => 'imgd_chef'
-        , 'imgd_evento'=>'enbiga-2017'
+        , 'imgd_servicio_categoria'=>$imgd_chef_evento
 	);
 	$query = new WP_Query( $args );
 ?>
