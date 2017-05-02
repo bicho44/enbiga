@@ -7,12 +7,38 @@ icon: dashicons-id-alt
 preview: true
 */
 
-  piklist('field', array(
-    'type' => 'text'
-    ,'field' => 'imgd_evento'
-    ,'label' => __('Evento que particpan','imgd')
-    ,'attributes' => array(
-      'class' => 'large-text'
-    )
+$choices = piklist(
+      get_terms('imgd_servicio_categoria', array(
+        'hide_empty' => false
+      ))
+      ,array(
+        'term_id'
+        ,'name'
+      ));
+$choices[-1] = 'All Eventos';
+ksort($choices);
+
+piklist('field', array(
+    'type' => 'select'
+    ,'field' => 'imgd_servicio_categoria'
+    ,'label' => 'Evento'
+    ,'choices' => $choices
   ));
 
+piklist('field', array(
+  'type' => 'text'
+  ,'field' => 'imgd_cant_mostrar'
+  ,'label' => __('Cantidad de Chefs a mostrar','imgd')
+  ,'attributes' => array(
+    'class' => 'small-text'
+  )
+));
+
+piklist('field', array(
+  'type' => 'select'
+  ,'field' => 'imgd_image_size'
+  ,'label' => __('Tamaño imagen del Archivo', 'imgd')
+  ,'choices' =>  get_intermediate_image_names()
+  ,'value' => 'thumbnail'
+  )
+);
