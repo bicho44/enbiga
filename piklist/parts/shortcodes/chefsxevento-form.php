@@ -18,7 +18,7 @@ piklist('field', array(
     )
     + piklist(get_terms(array(
       'taxonomy' => 'imgd_servicio_categoria'
-      ,'hide_empty' => false
+      ,'hide_empty' => true
     ))
     ,array(
       'term_id'

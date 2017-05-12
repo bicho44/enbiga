@@ -62,7 +62,7 @@ define('POST_EXCERPT_LENGTH', 55);
 */
 add_action( 'wp_footer', 'back_to_top' );
 function back_to_top() {
-    echo '<a id="totop" href="#"><img src="'.get_stylesheet_directory_uri().'/assets/images/enbiga-con-plato-totop.png"></a>';
+    echo '<a id="totop" href="#"><img alt="ENBIGA, Encuentro Bioceánico Gastronómico" src="'.get_stylesheet_directory_uri().'/assets/images/enbiga-con-plato-totop.png"></a>';
 }
 
 /**
