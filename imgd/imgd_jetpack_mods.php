@@ -1,6 +1,11 @@
 <?php
 
 /**
+* Evitar OpenGraph de Publizite
+**/
+add_filter( 'jetpack_enable_opengraph', '__return_false', 99 );
+
+/**
 * Eliminar el Publizite del fondo del contenido para luego cambiarlo de lugar
 * y poder ponerlo en donde quiera
 *
