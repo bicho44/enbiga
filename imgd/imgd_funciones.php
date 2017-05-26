@@ -30,6 +30,7 @@ function load_external_jQuery() {
  * Enqueue scripts and styles.
  */
 function imgdigital_scripts() {
+    wp_enqueue_style( 'imgd-theme-style', get_stylesheet_uri() );
 
 	//Modernizer
 	wp_register_script('img_modern', get_template_directory_uri() . '/assets/js/vendor/modernizr-2.6.2.min.js', false, null, false);
@@ -739,11 +740,3 @@ if (!function_exists('imgd_paises')){
     return $paises;
     }
 }
-
-/*function to add async to all scripts*/
-function js_async_attr($tag){
-
-# Add async to all remaining scripts
-return str_replace( ' src', ' async="async" src', $tag );
-}
-//add_filter( 'script_loader_tag', 'js_async_attr', 10 );
