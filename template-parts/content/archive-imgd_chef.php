@@ -23,12 +23,12 @@
           the_post_thumbnail($imgd_image_size, $attr);
         ?>
       </a>
-      <?php $args = array('number' => '1',);
-            $terms = get_terms('imgd_servicio_ciudad', $args );
-
-            foreach( $terms as $term ){
-              echo __('<strong>País</strong>: ','imgd'). $term->name ;
-            } 
+      <?php $terms = wp_get_post_terms( get_the_ID(),'imgd_servicio_ciudad'); ?>
+      <?php //$args = array('number' => '1',);
+            var_dump ($terms);
+            // foreach( $terms as $term ){
+            //   echo __('<strong>País</strong>: ','imgd'). $term->name ;
+            // } 
       ?>
       <?php }
       //echo var_dump($notitle);
