@@ -22,7 +22,9 @@ shortcode: chefsxevento
 	$query = new WP_Query( $args );
 ?>
 <?php
-if ( $query->have_posts() ) : ?>
+if ( $query->have_posts() ) : 
+    echo '<h4> Cantidad Chefs: '. $query->post_count.'</h4>';
+?>
     
     <div class="row">
         <?php
