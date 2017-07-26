@@ -10,7 +10,8 @@ shortcode: chefsxevento
 		'post_type' => 'imgd_chef'
         , 'imgd_servicio_categoria'=>$imgd_chef_evento
         ,'posts_per_page' => $imgd_chef_cant
-        ,'orderby' => 'title'
+        ,'orderby'=>'title'
+        ,'order' => 'ASC'
 	);
 	$query = new WP_Query( $args );
 ?>
@@ -32,9 +33,19 @@ if ( $query->have_posts() ) : ?>
                 //get_template_part( 'template-parts/content/archive', 'imgd_chef');
 
             endwhile;
+
+
         ?>
     </div> <!-- row --> 
-
+        <?php
+        if (function_exists("wp_bs_pagination"))
+				{
+					//wp_bs_pagination($the_query->max_num_pages);
+					wp_bs_pagination();
+				} else {
+					the_posts_navigation();
+				}
+        ?>
 
 <?php
 endif;
