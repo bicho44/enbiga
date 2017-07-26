@@ -13,6 +13,11 @@
 	<?php //the_post_thumbnail('full-cropped'); ?>
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php 
+          // Pais o Ciudad
+          $terms = wp_get_post_terms(get_the_ID(),'imgd_servicio_ciudad'); 
+          echo '<h3>'. $terms[0]->name.'</h3>';
+        ?>
 	</header><!-- .entry-header -->
 	
 	<div class="entry-content">
@@ -20,7 +25,7 @@
 		//@TODO: Mostrar el Pais
 		if (has_post_thumbnail()){
 			$attr = array(
-				'class' => "img-responsive img-circle align-right"
+				'class' => "img-responsive img-circle pull-right"
 			);
 			the_post_thumbnail('chef-cropped', $attr);
 		}

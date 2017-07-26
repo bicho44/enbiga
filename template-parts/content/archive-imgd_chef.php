@@ -23,25 +23,20 @@
           the_post_thumbnail($imgd_image_size, $attr);
         ?>
       </a>
-      <?php $terms = wp_get_post_terms( get_the_ID(),'imgd_servicio_ciudad'); ?>
-      <?php //$args = array('number' => '1',);
-            //var_dump ($terms);
-            echo '<strong>'. $terms[0]->name.'</strong>';
-            // foreach( $terms as $term ){
-            //   echo __('<strong>País</strong>: ','imgd'). $term->name ;
-            // } 
-      ?>
+
       <?php }
       //echo var_dump($notitle);
 
       ?>
       <header class="destacados-caption caption">
         <?php
-        
-        the_title(sprintf('<h3><a href="%s" rel="bookmark">', esc_url(get_permalink())), '</a></h3>');
-        
-        get_the_terms(get_the_ID());
+        the_title(sprintf('<h4><a href="%s" rel="bookmark">', esc_url(get_permalink())), '</a></h4>');?>
+        <?php 
+          // Pais o Ciudad
+          $terms = wp_get_post_terms(get_the_ID(),'imgd_servicio_ciudad'); 
+          echo '<strong>'. $terms[0]->name.'</strong>';
         ?>
+        <?php //get_the_terms(get_the_ID()); ?>
       </header><!-- .entry-header -->
 
     </div><!-- Thumbnail -->
