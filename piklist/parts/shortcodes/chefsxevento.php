@@ -9,6 +9,7 @@ shortcode: chefsxevento
 	$args = array(
 		'post_type' => 'imgd_chef'
         , 'imgd_servicio_categoria'=>$imgd_chef_evento
+        ,'posts_per_page' => $imgd_chef_cant
 	);
 	$query = new WP_Query( $args );
 ?>
@@ -25,7 +26,9 @@ if ( $query->have_posts() ) : ?>
                 * If you want to override this in a child theme, then include a file
                 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
                 */
-                get_template_part( 'template-parts/content/archive', 'imgd_chef');
+
+               include( locate_template( 'template-parts/content/archive-imgd_chef.php' ) );
+                //get_template_part( 'template-parts/content/archive', 'imgd_chef');
 
             endwhile;
         ?>

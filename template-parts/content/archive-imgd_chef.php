@@ -18,7 +18,7 @@
       <a href="<?php the_permalink(); ?> ">
         <?php
           /* @todo Cambiar para que la imagen sea responsive */
-          the_post_thumbnail('thumb-archive');
+          the_post_thumbnail($imgd_image_size);
         ?>
       </a>
       <?php }

@@ -41,6 +41,6 @@ piklist('field', array(
   ,'field' => 'imgd_image_size'
   ,'label' => __('Tamaño imagen del Archivo', 'imgd')
   ,'choices' =>  get_intermediate_image_names()
-  ,'value' => 'thumbnail'
+  ,'value' => 'show-cropped'
   )
 );
