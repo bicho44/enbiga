@@ -26,6 +26,8 @@
       </a>
       <?php $args = array('number' => '2',);
             $terms = get_terms('ciudad', $args );
+            var_dump($terms);
+            
             foreach( $terms as $term ){
               echo __('<strong>País</strong>','imgd'). $term->name ;
             } 
