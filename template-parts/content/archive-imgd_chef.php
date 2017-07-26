@@ -17,19 +17,17 @@
 
       <a href="<?php the_permalink(); ?> ">
         <?php
-          /* @todo Cambiar para que la imagen sea responsive */
           $attr = array(
-            'class' => "img-circle"
+            'class' => "img-responsive img-circle"
           );
           the_post_thumbnail($imgd_image_size, $attr);
         ?>
       </a>
       <?php $args = array('number' => '1',);
             $terms = get_terms('imgd_servicio_ciudad', $args );
-            //var_dump($terms);
 
             foreach( $terms as $term ){
-              echo __('<strong>País</strong>','imgd'). $term->name ;
+              echo __('<strong>País</strong>: ','imgd'). $term->name ;
             } 
       ?>
       <?php }
