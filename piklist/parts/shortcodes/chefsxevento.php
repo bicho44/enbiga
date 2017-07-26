@@ -15,7 +15,7 @@ shortcode: chefsxevento
                 'terms'    => $imgd_chef_evento,
             ),
 	    )
-        ,'posts_per_page' => $imgd_chef_cant
+        ,'posts_per_page' => -1
         ,'orderby'=>'title'
         ,'order' => 'ASC'
 	);
@@ -24,6 +24,7 @@ shortcode: chefsxevento
 <?php
 if ( $query->have_posts() ) : 
     echo '<h4> Cantidad Chefs: '. $query->post_count.'</h4>';
+    echo '<h4> Chefs Encontrados: '. $query->found_posts.'</h4>';
 ?>
     
     <div class="row">
