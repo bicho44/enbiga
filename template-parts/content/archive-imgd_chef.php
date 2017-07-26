@@ -26,7 +26,7 @@
       <?php $terms = wp_get_post_terms( get_the_ID(),'imgd_servicio_ciudad'); ?>
       <?php //$args = array('number' => '1',);
             //var_dump ($terms);
-            echo '<strong>'. $terms[0]['name'].'</strong>';
+            echo '<strong>'. $terms[0]->name.'</strong>';
             // foreach( $terms as $term ){
             //   echo __('<strong>País</strong>: ','imgd'). $term->name ;
             // } 
