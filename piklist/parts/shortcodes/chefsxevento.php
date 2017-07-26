@@ -10,7 +10,7 @@ shortcode: chefsxevento
 		'post_type' => 'imgd_chef'
         ,'tax_query' => array(
             array(
-                'taxonomy' => 'evento',
+                'taxonomy' => 'imgd_servicio_categoria',
                 'terms'    => $imgd_chef_evento,
             ),
 	    )
