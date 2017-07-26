@@ -8,7 +8,12 @@ shortcode: chefsxevento
 	// Define the query
 	$args = array(
 		'post_type' => 'imgd_chef'
-        , 'imgd_servicio_categoria'=>$imgd_chef_evento
+        ,'tax_query' => array(
+            array(
+                'taxonomy' => 'evento',
+                'terms'    => $imgd_chef_evento,
+            ),
+	    )
         ,'posts_per_page' => $imgd_chef_cant
         ,'orderby'=>'title'
         ,'order' => 'ASC'

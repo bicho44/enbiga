@@ -16,7 +16,7 @@
 	</header><!-- .entry-header -->
 	<?php
 			if (has_post_thumbnail()){
-				the_post_thumbnail('show-cropped');
+				the_post_thumbnail('chef-cropped');
 			}
 	?>
 	<div class="entry-content">
