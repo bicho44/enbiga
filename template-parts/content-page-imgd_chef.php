@@ -14,15 +14,20 @@
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
-	<?php
-			if (has_post_thumbnail()){
-				the_post_thumbnail('chef-cropped');
-			}
-	?>
+	
 	<div class="entry-content">
 		<?php
+		//@TODO: Mostrar el Pais
+		if (has_post_thumbnail()){
+			$attr = array(
+				'class' => "img-responsive img-circle align-right"
+			);
+			the_post_thumbnail('chef-cropped', $attr);
+		}
+		?>
+		<?php
 		the_content();
-
+		
 		echo wpdocs_custom_taxonomies_terms_links();
 
 		 if ( class_exists( 'Jetpack_RelatedPosts' ) ) {

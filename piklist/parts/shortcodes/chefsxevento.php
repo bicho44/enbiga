@@ -23,8 +23,8 @@ shortcode: chefsxevento
 ?>
 <?php
 if ( $query->have_posts() ) : 
-    echo '<h4> Cantidad Chefs: '. $query->post_count.'</h4>';
-    echo '<h4> Chefs Encontrados: '. $query->found_posts.'</h4>';
+    //echo '<h4> Cantidad Chefs: '. $query->post_count.'</h4>';
+    //echo '<h4> Chefs Encontrados: '. $query->found_posts.'</h4>';
 ?>
     
     <div class="row">
