@@ -18,9 +18,18 @@
       <a href="<?php the_permalink(); ?> ">
         <?php
           /* @todo Cambiar para que la imagen sea responsive */
-          the_post_thumbnail($imgd_image_size);
+          $attr = array(
+            'class' => "img-circle"
+          );
+          the_post_thumbnail($imgd_image_size, $attr);
         ?>
       </a>
+      <?php $args = array('number' => '1',);
+            $terms = get_terms('ciudad', $args );
+            foreach( $terms as $term ){
+              echo __('<strong>País</strong>','imgd'). $term->name ;
+            } 
+      ?>
       <?php }
       //echo var_dump($notitle);
 
