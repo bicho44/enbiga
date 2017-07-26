@@ -36,6 +36,28 @@ piklist('field', array(
   )
 ));
 
+piklist(
+    'field', 
+    array(
+        'type' => 'select'
+        ,'field' => 'imgd_cant_cols'
+        ,'description' => __('Cuantas Noticias Destacadas', 'imgd')
+        ,'value' => '3'
+        ,'label' => __('Cantidad de Columnas', 'imgd')
+        
+        ,'attributes' => array(
+                'class' => 'small-text'
+        )
+        , 'choices' => array(
+            2 => 2,
+            3 => 3,
+            4 => 4,
+            6 => 6,
+            8 => 8
+        )
+    )
+);
+
 piklist('field', array(
   'type' => 'select'
   ,'field' => 'imgd_image_size'

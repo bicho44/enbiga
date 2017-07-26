@@ -6,10 +6,17 @@
 *
 * @package IMGD porcitions
 */
+/** Default Cols */
+if (!isset($imgd_cant_cols)){
+  $imgd_cant_cols = 3;
+}
+$cant = 12 / $imgd_cant_cols;
+$col_class = 'col-md-'.$cant;
+
 
 ?>
 
-<div class="col-sm-6 col-md-4">
+<div class="col-sm-6 <?php echo $col_class?>">
   <div class="thumbnail">
     <?php
     // Must be inside a loop.
