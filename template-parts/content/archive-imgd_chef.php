@@ -24,7 +24,7 @@
           the_post_thumbnail($imgd_image_size, $attr);
         ?>
       </a>
-      <?php $args = array('number' => '1',);
+      <?php $args = array('number' => '2',);
             $terms = get_terms('ciudad', $args );
             foreach( $terms as $term ){
               echo __('<strong>País</strong>','imgd'). $term->name ;
