@@ -11,6 +11,7 @@ shortcode: chefsxevento
         ,'tax_query' => array(
             array(
                 'taxonomy' => 'imgd_servicio_categoria',
+                'field' => 'slug',
                 'terms'    => $imgd_chef_evento,
             ),
 	    )
