@@ -12,7 +12,7 @@
 	<header class="entry-header">
 	<?php
 			if (has_post_thumbnail()){
-				the_post_thumbnail('header-cropped');
+				the_post_thumbnail('full-header');
 			}
 	?>
 		<?php

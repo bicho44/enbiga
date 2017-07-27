@@ -14,6 +14,7 @@
 //1162x581.
 
 add_image_size('full-cropped', 1150, 480, true);
+add_image_size('full-header', 800, 600);
 
 add_image_size('header-cropped', 1150, 300, true, array( 'center', 'top' ) );
 

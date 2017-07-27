@@ -16,7 +16,7 @@ $col_class = 'col-md-'.$cant;
 
 ?>
 
-<div class="col-sm-6 <?php echo $col_class?>">
+<div class="col-sm-6 col-xs-6 <?php echo $col_class?>">
   <div class="thumbnail">
     <?php
     // Must be inside a loop.
