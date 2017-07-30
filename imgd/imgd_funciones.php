@@ -753,3 +753,15 @@ if (!(is_admin() )) {
     }
     add_filter( 'clean_url', 'defer_parsing_of_js', 11, 1 );
 }
+
+/**
+ * Remove Query Scripts.
+ */
+if (!(is_admin() )) {
+    function _remove_script_version( $src ){
+        $parts = explode( '?ver', $src );
+            return $parts[0];
+    }
+    add_filter( 'script_loader_src', '_remove_script_version', 15, 1 );
+    add_filter( 'style_loader_src', '_remove_script_version', 15, 1 );
+}
