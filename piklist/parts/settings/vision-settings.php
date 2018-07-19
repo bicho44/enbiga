@@ -84,10 +84,10 @@ piklist (
 $sliders=array();
 $sliders['boo']=__('Carousel Bootstrap','imgd');
 
-if(function_exists(revslider)) {
+if(function_exists('revslider')) {
   $sliders['rev']=__('Revolution Slider','imgd');
 }
-if(function_exists(owlslider)) {
+if(function_exists('owlslider')) {
   $sliders['owl']=__('Owl Slider','imgd');
 }
 
